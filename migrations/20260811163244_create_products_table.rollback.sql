@@ -4,5 +4,5 @@
 
 -- Write your rollback SQL here.
 -- Example:
---   DROP TABLE IF EXISTS create_products_table;
+  DROP TABLE IF EXISTS create_products_table;
 

@@ -4,9 +4,13 @@
 
 -- Write your SQL migration here.
 -- Example:
---   CREATE TABLE create_products_table (
---     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
---     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
---     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
---   );
+  CREATE TABLE create_products_table (
+    id   Text   Not Null PRIMARY KEY,
+    name  Text   Not Null,
+    description Text Not Null Default '',
+    price Integer Not Null,
+    stock Integer Not Null Default 0,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+  );
 
