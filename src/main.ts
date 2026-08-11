@@ -25,7 +25,7 @@ import {
   registerMetricsRoute,
 } from 'streetjs';
 import { HealthController } from './controllers/health.controller.js';
-import { ExampleController } from './controllers/example.controller.js';
+import { ProductsController } from './controllers/products.controller.js';
 import { chatConnectionHandler } from './gateways/chat.gateway.js';
 
 async function bootstrap(): Promise<void> {
@@ -150,7 +150,7 @@ async function bootstrap(): Promise<void> {
   // before public exposure. Use JwtService or SessionManager (see src/middleware/auth.ts)
   // to add authentication guards before deploying to production.
   app.registerController(HealthController);
-  app.registerController(ExampleController);
+  app.registerController(ProductsController);
 
   // ── OpenAPI spec ──────────────────────────────────────────────────────
   const openApiSpec = app.openApiSpec();
