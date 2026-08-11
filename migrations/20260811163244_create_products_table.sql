@@ -5,7 +5,7 @@
 -- Write your SQL migration here.
 -- Example:
   CREATE TABLE create_products_table (
-    id   Uuid   Not Null PRIMARY KEY,
+    id   UUID   Not Null PRIMARY KEY DEFAULT gen_random_uuid(),
     name  Text   Not Null,
     description Text Not Null Default '',
     price Integer Not Null,
